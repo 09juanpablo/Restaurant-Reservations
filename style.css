@@ -1,0 +1,153 @@
+/* Fuente elegante desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Bodoni Moda', serif;
+  background: url('https://www.transparenttextures.com/patterns/golden-rays.png') repeat; /* Fondo blanco con rayos dorados */
+  background-color: #ffffff; /* Blanco base */
+  margin: 0;
+  padding: 20px;
+  color: #000000; /* Texto negro */
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.92); /* Blanco semitransparente */
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(218, 165, 32, 0.5); /* Sombra dorada */
+}
+
+h1, h2 {
+  text-align: center;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Mesas */
+.table-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0;
+  gap: 15px;
+}
+
+.table {
+  width: 180px;
+  height: 200px;
+  border: 2px solid #daa520; /* Dorado */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(218, 165, 32, 0.6); /* Brillo dorado */
+}
+
+.table img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+.table-name {
+  background: rgba(255,255,255,0.9);
+  color: #000000;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+  z-index: 1;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+/* Inputs elegantes */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #daa520;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #ffd700; /* Dorado más brillante */
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.6);
+}
+
+/* Botones dorados */
+button, .btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffd700, #daa520);
+  color: #000000; /* LETRA NEGRA */
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform 0.2s, box-shadow 0.3s;
+  position: relative;
+  z-index: 2; /* Encima de la imagen */
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.8);
+}
+
+/* Botones agrupados (debajo de inputs) */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Reporte */
+#reportOutput {
+  background: #ffffff;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  font-family: monospace;
+  color: #000000;
+  border: 1px solid #daa520;
+}
+
+/* Botón Liberar (estilo especial en rojo elegante) */
+.free-btn {
+  background: linear-gradient(135deg, #ff4d4d, #cc0000);
+  color: #ffffff !important; /* Texto blanco para diferenciar */
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.free-btn:hover {
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.8);
+  transform: scale(1.05);
+}
+
